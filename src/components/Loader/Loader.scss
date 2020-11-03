@@ -1,0 +1,96 @@
+.loader_container {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  height: 130px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.loader_component {
+  width: 60px;
+  height: 60px;
+}
+#red {
+  animation: rotatered 3s infinite;
+}
+#blue {
+  animation: rotateblue 3s infinite;
+}
+#yellow {
+  animation: rotateyellow 3s infinite;
+}
+#green {
+  animation: rotategreen 3s infinite;
+}
+
+@keyframes rotatered {
+  from {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(70px, 0px);
+  }
+  50% {
+    transform: translate(70px, 70px);
+  }
+  75% {
+    transform: translate(0px, 70px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes rotateblue {
+  from {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 70px);
+  }
+  50% {
+    transform: translate(-70px, 70px);
+  }
+  75% {
+    transform: translate(-70px, 0px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes rotateyellow {
+  from {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -70px);
+  }
+  50% {
+    transform: translate(70px, -70px);
+  }
+  75% {
+    transform: translate(70px, 0px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes rotategreen {
+  from {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-70px, 0px);
+  }
+  50% {
+    transform: translate(-70px, -70px);
+  }
+  75% {
+    transform: translate(0px, -70px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
