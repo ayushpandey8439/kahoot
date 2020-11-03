@@ -1,0 +1,27 @@
+@import "./../../theme.scss";
+.home_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $purple-3;
+  .title {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+  }
+}
+
+.quiz-id-input {
+  background-color: $white;
+}
+
+$colors: $yellow-2, $orange-1, $orange-2, $red-2, $red-3, $green-2, $green-3,
+  $blue-2, $blue-3, $purple-2, $purple-3;
+@keyframes backgroundshift {
+  @each $color in $colors {
+  }
+}

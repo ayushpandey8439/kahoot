@@ -1,10 +1,10 @@
-import "./App.css";
-import Loader from "./components/Loader/Loader";
+import "./App.scss";
+
+import Home from "./components/Home/Home";
 function App() {
   return (
     <div className="App">
-      Hello World!
-      <Loader />
+      <Home></Home>
     </div>
   );
 }
