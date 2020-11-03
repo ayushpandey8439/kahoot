@@ -7,7 +7,7 @@
 
   width: 100vw;
   height: 100vh;
-  background-color: $purple-3;
+  animation: backgroundshift 20s infinite alternate;
   .title {
     color: white;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -22,6 +22,37 @@
 $colors: $yellow-2, $orange-1, $orange-2, $red-2, $red-3, $green-2, $green-3,
   $blue-2, $blue-3, $purple-2, $purple-3;
 @keyframes backgroundshift {
-  @each $color in $colors {
+  from {
+    background-color: nth($colors, 1);
+  }
+  10% {
+    background-color: nth($colors, 2);
+  }
+  20% {
+    background-color: nth($colors, 3);
+  }
+  30% {
+    background-color: nth($colors, 4);
+  }
+  40% {
+    background-color: nth($colors, 5);
+  }
+  50% {
+    background-color: nth($colors, 6);
+  }
+  60% {
+    background-color: nth($colors, 7);
+  }
+  70% {
+    background-color: nth($colors, 8);
+  }
+  80% {
+    background-color: nth($colors, 9);
+  }
+  90% {
+    background-color: nth($colors, 10);
+  }
+  to {
+    background-color: nth($colors, 11);
   }
 }
